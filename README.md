@@ -1,1 +1,7 @@
 # Expalk
+
+- Server
+
+- Web
+
+- Android
