@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Expalk</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="private_app_id">8a74446508ae4a1e98ed9a66c1d607de</string>
+    <string name="fcm_key">AAAAbKYDZio:APA91bFrJinViQF81BqqHXHeiHd8PfTq_qp_PkXSM6FlEnsWqxgV54ci4cPtk1zOxsVzwd-oq7LNsXcgzpf_oj0wD5pqFoZoWu59vb-RhGmLfAbU6UAMJbQWSyNf33z8aOTMc6-tJrVq</string>
+
+    <string-array name="string_array_resolutions">
+        <item>320x240</item>
+        <item>480x360</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>960x540</item>
+        <item>1280x720</item>
+    </string-array>
+
+</resources>
