@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="survey-form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Survey Form
+	</title>
+</head>
+
+<body>
+	<div class="container"></div>
+	<!-- Create Form -->
+	<form id="form">
+    <h2>Survey Form</h2>
+ 	<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+    </textarea>
+		</div>
+Thanks for rating us!</div>
+</div>
+<div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+        <header></header>
+          <!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+  </form>
+<script>
+      const widget = document.querySelector(".star-widget");
+      btn.onclick = ()=>{
+        widget.style.display = "none";
+        editBtn.onclick = ()=>{
+          widget.style.display = "block";
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
+  
+		
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    
+    min-height: 100vh;
+    background-image: url("photo.jpg");
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+form {
+    text-align: center;
+    background-color : white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+/* Styling form-control Class */
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Styling form-control input,
+select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+/* Styling Button */
+button {
+    margin-left: 23%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    border: none;
+    outline: none;
+    background: #92CF48;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+}
+.container .star-widget input{
+    display: none;
+  }
+  .star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+  }
+  input:checked ~ label{
+    color: #fd4;
+  }
+  input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+  }
+  #rate-1:checked ~ form header:before{
+    content: "I just hate it 😠";
+  }
+  #rate-2:checked ~ form header:before{
+    content: "I don't like it 😒";
+  }
+  #rate-3:checked ~ form header:before{
+    content: "It is awesome 😄";
+  }
+  #rate-4:checked ~ form header:before{
+    content: "I just like it 😎";
+  }
+  #rate-5:checked ~ form header:before{
+    content: "I just love it 😍";
+  }
+
