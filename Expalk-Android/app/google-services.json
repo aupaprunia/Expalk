@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "466641708586",
+    "firebase_url": "https://expalk-default-rtdb.firebaseio.com",
+    "project_id": "expalk",
+    "storage_bucket": "expalk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466641708586:android:8b667dea4fc5a677bc8553",
+        "android_client_info": {
+          "package_name": "com.bitcamp.expalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466641708586-1e0ba0sku8rddtk5t6mi3a63mlthtipe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bitcamp.expalk",
+            "certificate_hash": "bd168c1b6ba58ff2b5042f34f67d12c5add2f3d5"
+          }
+        },
+        {
+          "client_id": "466641708586-daflvq9qo0of2vdsalc5d2islghk6v2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnGfaCnX4_UUDlXYxs60iE3pDqNGOH6nQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466641708586-daflvq9qo0of2vdsalc5d2islghk6v2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

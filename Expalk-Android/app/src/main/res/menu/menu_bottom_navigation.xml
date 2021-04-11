@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_user"/>
+
+        <item
+            android:id="@+id/nav_mentor"
+            android:icon="@drawable/ic_listener"
+            android:title="Mentor" />
+
+        <item
+            android:id="@+id/nav_mentee"
+            android:icon="@drawable/ic_speaker"
+            android:title="Mentee" />
+
+        <item
+            android:id="@+id/nav_connection"
+            android:title="Connections"
+            android:icon="@drawable/ic_connection"/>
+
+    </group>
+
+</menu>
