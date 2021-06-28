@@ -78,7 +78,7 @@ def push_listner(choice):
   db.child("Online").child("Mentor").child(choice_dict[choice]).child(userId).child("uid").set(userId)
   db.child("Users").child(userId).child("token").set(token-1)
   return {"status" : 1, "message": "You will be connected to a Mentor shortly."}
-  
+
 
 if __name__ == '__main__':
     app.run(debug = True)

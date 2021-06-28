@@ -105,5 +105,5 @@ btn_mute.addEventListener("click",()=>{
 })
 
 });
-setTimeout(function(){alert("You have 1 minute left!")},240000);
-setTimeout(function(){window.location.href = "survey-form.html"; alert("Your session has ended.")}, 300000);
+setTimeout(function(){alert("You have 1 minute left!")},24000);
+setTimeout(function(){window.location.href = "survey-form.html"; alert("Your session has ended.")}, 30000);
