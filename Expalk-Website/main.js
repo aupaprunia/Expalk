@@ -39,14 +39,9 @@ client.init("8a74446508ae4a1e98ed9a66c1d607de",() => console.log("AgoraRTC clien
 
 var channel = sessionStorage.getItem("channel_name");
 console.log(channel);
+sessionStorage.setItem("present","yes")
 
-fetch("https://trialproject-55deb-default-rtdb.firebaseio.com/talktalk.json").then(response=>{
-return response.json();
-}).then(result=>{
-console.log(channel);
-
-
-client.join(null,channel,null, (uid)=>{  // client.join(token, channel_name, user_id) parameters
+client.join(null,"channel",null, (uid)=>{  // client.join(token, channel_name, user_id) parameters
 
     let localStream = AgoraRTC.createStream({
         streamID: uid,
@@ -83,12 +78,14 @@ client.on('stream-removed', (evt) => {
     let streamId = String(stream.getId());
     stream.close();
     removeVideoStream(streamId);
+    
 });
 client.on('peer-leave', (evt) => {
     let stream = evt.stream;
     let streamId = String(stream.getId());
     stream.close();
     removeVideoStream(streamId);
+    sessionStorage.setItem("present","no")
 });
 
 function func(){
@@ -98,12 +95,16 @@ function func(){
 });
 }
 
-let btn_mute = document.querySelector("#btn-mute");
+var interval = setInterval(function(){
+    if(sessionStorage.getItem("present") == "no"){
+        window.alert("Meeting has ended. You will now be redirected to the dashbaord");
+        window.location.href = "dashboard.html";
+        clearInterval(interval);
+    }
+},1000)
 
-btn_mute.addEventListener("click",()=>{
-    func();
-})
-
-});
+if(sessionStorage.getItem("role") == "mentor"){
 setTimeout(function(){alert("You have 1 minute left!")},24000);
-setTimeout(function(){window.location.href = "survey-form.html"; alert("Your session has ended.")}, 30000);
+setTimeout(function(){window.location.href = "dashboard.html"; alert("Your session has ended.")}, 30000);
+setTimeout(function(){sessionStorage.removeItem("channel_name")}, 30000);
+}

@@ -5,12 +5,17 @@
         <meta name= "viewport" content="width= device-width ,initial-scale=1.0">
         <title>UpWind Login</title>
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-        <link rel="stylesheet" href="login_style.css">
+        <link rel="stylesheet" href="regsiter.css">
     </head>
 	<body >
         <div class="container">
             <form>
-                <h1><span><img src="puzzle.png" alt=""></span> Expalk</h1>
+                <h1><span><img src="puzzle.png" alt=""></span> Regsiter</h1>
+                <div class="form-group">
+                    <label for=""><b>Name</b></label>
+                    <input type="text" class="form-control" id = "name" required>
+                </div>
+
                 <div class="form-group">
                     <label for=""><b>Email ID</b></label>
                     <input type="text" class="form-control" id = "input_email" required>
@@ -20,13 +25,19 @@
                     <label for=""><b>Password</b></label>
                     <input type="password" class="form-control" id = "input_password" required>
                 </div>
+
+                <div class="form-group">
+                    <label for=""><b>Confirm Password</b></label>
+                    <input type="password" class="form-control" id = "input_confirm" required>
+                </div>
+
                 <div>
                 <p style = "margin-left: 33%; margin-top: 5px;" id = "error_message"></p>
                 </div>
             </form>
-            <button class='login-btn' onclick="login()">Login</button><br>
-            <button class="login-btn"><a href="register.html" style="text-decoration: none; color: white;">Register</a></button><br>
+            <button class='login-btn' onclick="register()">Register</button><br>
+            <button class='login-btn'><a href="login.html" style="text-decoration: none; color: white;">Back</a></button><br>
         </div>
-        <script src="login.js"></script>
+        <script src="register.js"></script>
     </body>
     </html>

@@ -1,31 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
-    font-family: sans-serif;
+    font-family: 'Poppins',sans-serif;
 }
+
+body{
+    background-image: url("4.png");
+    background-size: cover;
+}
+
 h1,h4{
     text-align: center;
 }
-#remote-container video{
-    height: auto;
-    position: relative !important;
-}
+
 #me{
     position: relative;
-    width: 50%;
+    width: 20%;
     margin: 0 auto;
     display: block;
 }
 #me video{
     position: relative !important;
 }
-#remote-container{
-    display: block;
-    width: 600px;
-    height: 600px;
-    margin-left: 330px;
+
+#remote-container video{
+    height: auto;
+    position: relative !important;
 }
 
-#btn-mute{
-    margin-left : 600px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+#remote-container{
+    width: 50%;
+    display: block;
 }
