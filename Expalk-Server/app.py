@@ -4,7 +4,7 @@ from flask_cors import CORS
 
 choice_dict = {1:"Hardware", 2: "Mobile", 3: "Web", 4: "Javascript"}
 
-config = {"apiKey": "AIzaSyBYxHLYe18qBEUOr2T8hBRCa4ILzvBYAGo",
+config = {"apiKey": "Enter your own API Key here",
     "authDomain": "expalk.firebaseapp.com",
     "databaseURL": "https://expalk-default-rtdb.firebaseio.com",
     "projectId": "expalk",
